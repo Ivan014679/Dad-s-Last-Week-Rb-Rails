@@ -1,0 +1,26 @@
+<div class="form-group" style="width: 800px; height: 800px; margin: 0 auto; margin-top: 50px; border-radius: 10px; border-radius: 05px;">
+    <h2><font face="Old English Text MT">Estad&iacute;sticas</font></h2>
+    <br>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Jugador</th>
+                <th>Nombre del personaje</th>
+                <th>Porcentaje de salud</th>
+                <th>Estado</th>
+                <th>Decisión final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%@all_statistics.each do |x|%>
+            <tr>
+                <td><%=x.player%></td>
+                <td><%=x.pjname%></td>
+                <td><%=x.health_percentage%></td>
+                <td><%=x.state%></td>
+                <td><%=x.final_decision%></td>
+            </tr>
+            <%end%>
+        </tbody>
+    </table>
+</div>

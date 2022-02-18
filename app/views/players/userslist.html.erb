@@ -1,0 +1,24 @@
+<div class="form-group" style="width: 600px; height: 600px; margin: 0 auto; margin-top: 50px; border-radius: 10px; border-radius: 05px;">
+    <h2><font face="Old English Text MT">Lista de jugadores</font></h2>
+    <br>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nombre de usuario</th>
+                <th>Nombre del personaje</th>
+                <th>D&iacute;a</th>
+                <th>Decisi&oacute;n</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%@all_players.each do |x|%>
+            <tr>
+                <td><%=x.username%></td>
+                <td><%=x.pjname%></td>
+                <td><%=x.day%></td>
+                <td><%=x.decision%></td>
+            </tr>
+            <%end%>
+        </tbody>
+    </table>
+</div>

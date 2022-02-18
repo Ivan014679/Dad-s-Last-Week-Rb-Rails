@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  decision_id: MyString
+  element_code: MyString
+
+two:
+  decision_id: MyString
+  element_code: MyString
